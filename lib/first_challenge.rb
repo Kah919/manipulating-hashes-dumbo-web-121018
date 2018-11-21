@@ -13,7 +13,7 @@ def first_challenge
     }
   }
 
-  your code here
+  # your code here
   contacts.each do |name, attribute|
     attribute.each do |k, v|
       if k == :favorite_icecream_flavors
