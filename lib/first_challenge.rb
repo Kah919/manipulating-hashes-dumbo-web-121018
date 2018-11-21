@@ -22,7 +22,7 @@ def first_challenge
   #   end
   # end
   contacts["Freddy Mercury"][:favorite_icecream_flavors].each |k|
-    delete_if { |k| k == "strawberry"}
+    delete_if { |k| k == "strawberry" }
   end
 
   #remember to return your newly altered contacts hash!
