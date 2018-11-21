@@ -14,12 +14,15 @@ def first_challenge
   }
 
   # your code here
-  contacts.each do |name, attribute|
-    attribute.each do |k, v|
-      if k == :favorite_icecream_flavors
-        v.delete_if { |x| x == "strawberry" }
-      end
-    end
+  # contacts.each do |name, attribute|
+  #   attribute.each do |k, v|
+  #     if k == :favorite_icecream_flavors
+  #       v.delete_if { |x| x == "strawberry" }
+  #     end
+  #   end
+  # end
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].each |k|
+    delete_if { |k| k == "strawberry"}
   end
 
   #remember to return your newly altered contacts hash!
